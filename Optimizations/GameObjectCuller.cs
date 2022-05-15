@@ -13,14 +13,14 @@ namespace PerformanceEnhancingDrugs
         {
             if (area == null || gameObject == null)
             {
-                Patch.s_GameObjectCullers.Remove(this);
+                Patch_Culling.s_GameObjectCullers.Remove(this);
                 return;
             }
 
             m_GameObject = gameObject;
             m_Area = area;
 
-            Patch.a_Cull += Cull;
+            Patch_Culling.a_Cull += Cull;
         }
         public void Cull(LG_Area area, bool status) 
         {

@@ -1,4 +1,5 @@
-﻿using CullingSystem;
+﻿using ChainedPuzzles;
+using CullingSystem;
 using Enemies;
 using HarmonyLib;
 using IRF;
@@ -13,8 +14,9 @@ using UnityEngine;
 namespace PerformanceEnhancingDrugs
 {
     [HarmonyPatch]
-    public class Patch
+    public class Patch_Culling
     {
+
         [HarmonyPostfix]
         [HarmonyPatch(typeof(C_Node), "Hide")]
         public static void Hide(C_Node __instance)

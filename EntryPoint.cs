@@ -14,7 +14,7 @@ namespace PerformanceEnhancingDrugs
         {
             m_Harmony = new Harmony("gov.mccad00.PerformanceEnhancingDrugs");
             m_Harmony.PatchAll();
-            LG_Factory.add_OnFactoryBuildDone((Action)Patch.OnFactoryBuildDone);
+            LG_Factory.add_OnFactoryBuildDone((Action)Patch_Culling.OnFactoryBuildDone);
         }
 
         private Harmony m_Harmony;

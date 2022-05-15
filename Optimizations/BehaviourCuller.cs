@@ -13,14 +13,14 @@ namespace PerformanceEnhancingDrugs
         {
             if (area == null || cullableBehaviour == null)
             {
-                Patch.s_BehaviourCullers.Remove(this);
+                Patch_Culling.s_BehaviourCullers.Remove(this);
                 return;
             }
 
             m_CullableBehaviour = cullableBehaviour;
             m_Area = area;
 
-            Patch.a_Cull += Cull;
+            Patch_Culling.a_Cull += Cull;
         }
         public void Cull(LG_Area area, bool status) 
         {

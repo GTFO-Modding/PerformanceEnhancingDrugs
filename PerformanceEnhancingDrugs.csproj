@@ -28,11 +28,12 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="GameObjectCuller.cs" />
-    <Compile Include="BehaviourCuller.cs" />
+    <Compile Include="Optimizations\GameObjectCuller.cs" />
+    <Compile Include="Optimizations\BehaviourCuller.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="L.cs" />
-    <Compile Include="Patch.cs" />
+    <Compile Include="Optimizations\Patches\Patch_Bioscan.cs" />
+    <Compile Include="Optimizations\Patches\Patch_Culling.cs" />
     <None Include="Dependencies.props" />
     <None Include="GameFolder.props" />
   </ItemGroup>
