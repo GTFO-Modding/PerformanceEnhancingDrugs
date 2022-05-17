@@ -34,7 +34,7 @@ namespace PerformanceEnhancingDrugs
             if (!__instance.m_colorsByMode.ContainsKey(eChainedPuzzleGraphicsColorMode.Alarm_TimedOut)) __instance.m_colorsByMode.Add(eChainedPuzzleGraphicsColorMode.Alarm_TimedOut, __instance.m_colorsByMode[eChainedPuzzleGraphicsColorMode.Alarm_Waiting]);
             if (!__instance.m_colorsByMode.ContainsKey(eChainedPuzzleGraphicsColorMode.Alarm_Active)) __instance.m_colorsByMode.Add(eChainedPuzzleGraphicsColorMode.Alarm_Active, __instance.m_colorsByMode[eChainedPuzzleGraphicsColorMode.Alarm_Waiting] * new Color(2.5f, 2.1f, 1.6f, 1.2f));
 
-            __instance.m_colorsByMode[eChainedPuzzleGraphicsColorMode.Alarm_Active] *= new Color(2.5f, 2.1f, 1.6f, 1.2f);
+            __instance.m_colorsByMode[eChainedPuzzleGraphicsColorMode.Alarm_Active] *= new Color(2.0f, 1.7f, 1.2f, 0.6f);
         }
     }
 }
